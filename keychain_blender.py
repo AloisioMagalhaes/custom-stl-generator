@@ -48,6 +48,6 @@ for s,f,n,o,p in ((L1,F1,S1,O1,0),(L2,F2,S2,O2,-S1*P2),(L3,F3,S3,O3,-(S1*P2+S2*P
  if s:
   t=txt(s,f,n,p,TH+.1,W);t.location.z=PH-.1;uni(a,t)
 bpy.ops.object.select_all(action='DESELECT');a.select_set(True);bpy.context.view_layer.objects.active=a
-r=a.modifiers.new('r','REMESH');r.mode='VOXEL';r.voxel_size=.04;r.use_smooth_shade=False;bpy.ops.object.modifier_apply(modifier=r.name)
+r=a.modifiers.new('r','REMESH');r.mode='VOXEL';r.voxel_size=.08;r.use_smooth_shade=False;bpy.ops.object.modifier_apply(modifier=r.name)
 o=os.path.join(os.path.dirname(__file__),'output_blender.stl')
 bpy.ops.wm.stl_export(filepath=o,export_selected_objects=True)
