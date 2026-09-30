@@ -1,7 +1,7 @@
 Line1_Text="Good";
 Line2_Text="";
 Line3_Text="";
-Font_L1="DynaPuff:style=Bold";
+Font_L1="DynaPuff Condensed:style=Bold";
 Font_L2="Bagel Fat One";
 Font_L3="Bagel Fat One";
 Font_Size_L1=10;

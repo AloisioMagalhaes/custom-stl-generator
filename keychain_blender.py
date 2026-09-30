@@ -3,7 +3,7 @@ import bpy,sys,os
 L1="Good"
 L2=""
 L3=""
-F1=r"C:\Users\educa\AppData\Local\Microsoft\Windows\Fonts\DynaPuff_Condensed-Bold.ttf"
+F1=os.path.join(os.path.dirname(__file__),'fonts','DynaPuff_Condensed-Bold.ttf')
 F2=r"C:\Users\educa\AppData\Local\Microsoft\Windows\Fonts\BagelFatOne-Regular.ttf"
 F3=F2
 S1=10
