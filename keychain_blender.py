@@ -1,5 +1,5 @@
 import bpy,os
-L1="Good";L2="";L3=""
+L1="Adriana";L2="";L3=""
 F1=os.path.join(os.path.dirname(__file__),'fonts','DynaPuff_Condensed-Bold.ttf')
 F2=os.path.join(os.path.dirname(__file__),'fonts','DynaPuff_Condensed-Regular.ttf');F3=F2
 S1=10;S2=10;S3=10;P2=1.1;P3=1.1;PH=4;TH=2;HR=3;R=3;G=1.5
@@ -23,4 +23,4 @@ a=box(cx,cy,w,d,PH);boolean(a,cyl(cx-w/2+HR+2,cy,HR,PH+2),'DIFFERENCE')
 for o in ts:boolean(a,o,'UNION')
 r=a.modifiers.new('r','REMESH');r.mode='VOXEL';r.voxel_size=.06;r.use_smooth_shade=False;bpy.context.view_layer.objects.active=a;bpy.ops.object.modifier_apply(modifier=r.name)
 bpy.ops.object.select_all(action='DESELECT');a.select_set(True);bpy.context.view_layer.objects.active=a
-o=os.path.join(os.path.dirname(__file__),'output_blender.stl');bpy.ops.wm.stl_export(filepath=o,export_selected_objects=True)
+o=os.path.join(os.path.dirname(__file__),'adriana_dynapuff_condensed_bold.stl');bpy.ops.wm.stl_export(filepath=o,export_selected_objects=True)
